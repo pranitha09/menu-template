@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family:'Roboto Condensed', serif;
+            color:rgba(5, 10, 5, 1) ;
+            align-items: center;
+
+        }
+        .container{
+
+            display: grid;
+            grid-template-columns: 30% 70%;
+            height: 420px;
+            width: 700px;
+            background-color: rgba(10, 29, 22);
+            z-index: -1;
+            
+
+        }
+        
+        .whitebg{
+            background-color: white;
+            z-index: 1;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .container .greenbg .image
+        {
+            position: absolute;
+            height: 230px;
+            width: 230px;
+            background-color: rgba(10, 29, 22);
+            margin-top: 70px;
+            margin-left: 80px;
+            z-index: 10;
+            border-radius: 7%;
+            border: 6px solid rgb(136, 123, 53);
+           
+
+        }
+        .qrcode{
+            
+            height: 200px;
+            width: 200px;
+            margin-top: 12px;
+            margin-left: 12px;
+            position: absolute;
+           z-index: 8;
+            border-radius: 7%;
+            padding: 3px;
+
+        }
+        .logo
+        {
+
+            width: 250px;
+            height: 140px;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top: 10px;
+
+        }
+        .dotts{
+            padding-top: 10px;
+            width: fit-content;
+            margin-left: 160px;
+            margin-top: 1px;
+        }
+        .text
+        {
+
+            border-top: 2px solid  rgba(7, 19, 7, 1);
+            border-bottom: 2px solid  rgba(7, 19, 7, 1);
+            color:  rgba(7, 19, 7, 1); ;
+            font-size: 30px;
+            
+        }
+        .text-contact
+        {
+            margin-left: 90px;
+            text-align: center;
+            font-size: 21px;
+            padding-top: 5px;
+            
+        }
+        .whole
+        {
+
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="whole">
+    <div class="container">
+        <div class="greenbg">
+            <div class= "image"><img src="images/qrcode.png"  class="qrcode">
+            <figcaption style="z-index: 8; color: white; margin-top: 240px; margin-left: 14px; font-size: 20px;"> Table No. A01</figcaption></div>
+        </div>
+        <div class="whitebg">
+            <img src="images/logores.jpg" class="logo">
+            <div class="dotts">
+                <p class="text"><strong>SCAN • ORDER • PAY </strong></p>
+            </div>
+            <div class="contact">
+                <p class ="text-contact">
+                    To access: <br>Open camera & Scan<br> OR <br> Go on <strong> hiqr.in</strong> & Scan
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
